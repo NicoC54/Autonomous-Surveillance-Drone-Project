@@ -1,13 +1,36 @@
-# 🚁 Autonomous Drone Simulation: Complete Setup Guide
+C'est noté. Voici la version finale, propre et optimisée pour ton `README.md`.
 
-This tutorial provides a step-by-step guide to setting up a **PX4 SITL (Software In The Loop)** simulation environment with **ROS 2 Humble**, **Gazebo**, and **RTAB-Map** for 3D SLAM.
+J'ai appliqué tes consignes à la lettre :
 
+1. **Suppression des codes sources** (puisqu'ils sont déjà dans ton repo).
+2. **Ajout du lien vers le tuto d'installation** PX4/ROS2.
+3. **Clarification** que ce dépôt contient le workspace complet prêt à l'emploi.
+4. **Suppression de l'installation de ROS Humble** (supposée acquise).
 
-## 1. Environment Setup
+Tu peux copier-coller ce bloc directement.
 
-### 1.1 Python Dependencies Fix
+---
 
-Before installing ROS packages, we need to ensure compatibility with Python `setuptools`. Run the following to prevent build errors:
+# 🚁 Autonomous Surveillance Drone - Simulation Workspace
+
+This repository contains the complete **ROS 2 workspace** for the Autonomous Surveillance Drone project. It integrates **PX4 Autopilot (SITL)** with **Gazebo Garden/Harmonic**, a custom **TF tree**, and **RTAB-Map** for 3D SLAM.
+
+> **Note:** All source codes for TF management (`my_tf2_package`) and SLAM configuration (`rtabmap_slam_pkg`) are already included in this repository. You simply need to build and launch them.
+
+## 📋 Prerequisites & Base Setup
+
+### 1. Base Installation (PX4 & ROS 2)
+
+Before using this workspace, ensure you have a working installation of **ROS 2 Humble** and **PX4 Autopilot** on Ubuntu 22.04.
+👉 **[Click here for the complete PX4 + ROS 2 + Gazebo Installation Guide](https://kuat-telegenov.notion.site/How-to-setup-PX4-SITL-with-ROS2-and-XRCE-DDS-Gazebo-simulation-on-Ubuntu-22-e963004b701a4fb2a133245d96c4a247)**
+
+### 2. Additional Dependencies
+
+Install **QGroundControl** to monitor the drone:
+
+* [Download QGroundControl AppImage](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html)
+
+Fix Python compatibility for ROS 2 builds:
 
 ```bash
 pip3 uninstall setuptools empy
@@ -15,63 +38,56 @@ pip3 install --user "setuptools>=30.3.0,<80" "empy<4"
 
 ```
 
-### 1.2 Install QGroundControl
-
-QGroundControl (QGC) is required to monitor the drone's flight status and mode.
-
-1. Download the AppImage from the [official documentation](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html).
-2. Make it executable and run it:
-```bash
-chmod +x QGroundControl.AppImage
-./QGroundControl.AppImage
-
-```
-
-
-
-### 1.3 Install ROS-Gazebo Bridge
-
-We use the `ros-gz-bridge` to communicate between ROS 2 (DDS) and Gazebo (Garden/Harmonic). We must ensure we have the correct version (`harmonic`) installed.
+Install the specific Gazebo bridge for ROS 2 Humble:
 
 ```bash
-# Remove potential conflicting versions
 sudo apt remove --purge ros-humble-ros-gz*
 sudo apt autoremove && sudo apt update
-
-# Install the correct Harmonic bridge
 sudo apt install ros-humble-ros-gzharmonic
 
 ```
 
 ---
 
-## 2. Launching the Simulation
+## 🛠️ Build the Workspace
 
-To run the full simulation, you need to open **3 separate terminals**.
-
-### 🖥️ Terminal 1: PX4 SITL & Gazebo
-
-This launches the drone physics model (`x500_depth`) and the Gazebo environment.
+Since the packages are already in `src/`, simply build the workspace:
 
 ```bash
-# Navigate to your PX4-Autopilot directory
+cd ~/ws_ros2
+colcon build
+source install/setup.bash
+
+```
+
+---
+
+## 🚀 Launching the Simulation
+
+You need **3 separate terminals** to run the full simulation loop.
+
+### Terminal 1: PX4 SITL (The Drone)
+
+Starts the physics simulation in Gazebo with the depth camera model.
+
+```bash
 cd ~/PX4-Autopilot
 make px4_sitl gz_x500_depth
 
 ```
 
-### 🖥️ Terminal 2: MicroXRCE Agent
+### Terminal 2: MicroXRCE Agent (Communication)
 
-The agent acts as the middleware to translate MAVLink messages (PX4) into DDS messages (ROS 2).
+Bridges MAVLink (PX4) to DDS (ROS 2).
 
 ```bash
 MicroXRCEAgent udp4 -p 8888
 
 ```
 
-### 🖥️ Terminal 3: The ROS-GZ Bridge
+### Terminal 3: ROS-GZ Bridge (Sensors)
 
-This command creates the bridge for specific sensors. It allows ROS 2 to "see" the Gazebo topics (IMU, Magnetometer, Odometry, and Depth Camera).
+Exposes Gazebo sensors (IMU, Odom, Camera, Depth) to ROS 2.
 
 ```bash
 ros2 run ros_gz_bridge parameter_bridge \
@@ -87,133 +103,43 @@ ros2 run ros_gz_bridge parameter_bridge \
 
 ---
 
-## 3. Setting up Transforms (TF)
+## 📡 Running ROS 2 Nodes (TFs & SLAM)
 
-The drone needs a TF Tree (Coordinate Frames) to locate sensors relative to the body.
+Once the simulation is running, open new terminals to launch the onboard logic included in this repo.
 
-### 3.1 Create the Package
+### 1. Launch TFs (Coordinate Frames)
 
-First, install the necessary TF tools and create a new Python package.
-
-```bash
-sudo apt install ros-humble-tf2-tools ros-humble-rqt-tf-tree
-cd ~/ws_ros2/src
-ros2 pkg create --build-type ament_python my_tf2_package
-
-```
-
-### 3.2 Add Source Files
-
-Place your Python scripts inside the package structure as follows:
-
-```text
-my_tf2_package/
-├── package.xml
-├── setup.py
-└── my_tf2_package/
-    ├── __init__.py
-    ├── drone_tf_publisher.py  <-- (Your TF Logic)
-    └── launch/
-        └── tf_launch.py       <-- (Your Launch File)
-
-```
-
-### 3.3 Build and Launch
-
-Make the script executable, build the workspace, and launch the node.
+Publishes the static transform between the drone body and the camera.
 
 ```bash
-# Make executable
-chmod +x ~/ws_ros2/src/my_tf2_package/my_tf2_package/drone_tf_publisher.py
-
-# Build
-cd ~/ws_ros2
-colcon build --packages-select my_tf2_package
-source install/setup.bash
-
-# Launch
+source ~/ws_ros2/install/setup.bash
 ros2 launch my_tf2_package tf_launch.py
 
 ```
 
----
+### 2. Launch RTAB-Map (3D Mapping)
 
-## 4. 3D Mapping (RTAB-Map)
-
-We use RTAB-Map to perform SLAM (Simultaneous Localization and Mapping) using the simulated depth camera.
-
-### 4.1 Install & Create Package
+Starts the SLAM algorithm using the configured parameters in `src/rtabmap_slam_pkg/params`.
 
 ```bash
-sudo apt install ros-humble-rtabmap-ros
-cd ~/ws_ros2/src
-ros2 pkg create --build-type ament_python rtabmap_slam_pkg
-
-```
-
-### 4.2 Configuration (YAML)
-
-We need to tell RTAB-Map which topics to listen to.
-
-1. Create a `params` directory: `mkdir -p ~/ws_ros2/src/rtabmap_slam_pkg/params`
-2. Create a file named `rtabmap_params.yaml` inside it with the following content:
-
-```yaml
-/rtabmap:
-  ros__parameters:
-    use_sim_time: true
-    subscribe_depth: false
-    subscribe_rgb: true
-    rgb_topic: "/world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/image"
-    camera_info_topic: "/world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/camera_info"
-    subscribe_scan_cloud: true
-    scan_cloud_topic: "/depth_camera/points"
-    approx_sync: true
-    topic_queue_size: 50
-    sync_queue_size: 50
-    qos_image: 1
-    qos_camera_info: 1
-
-```
-
-### 4.3 Build and Launch SLAM
-
-Rebuild the workspace to include the new package and parameters.
-
-```bash
-cd ~/ws_ros2
-colcon build --packages-select rtabmap_slam_pkg
-source install/setup.bash
-
-# Launch RTAB-Map with the custom parameters
+source ~/ws_ros2/install/setup.bash
 ros2 launch rtabmap_slam_pkg rtabmap_slam.launch.py params_file:=$(ros2 pkg prefix rtabmap_slam_pkg)/share/rtabmap_slam_pkg/params/rtabmap_params.yaml
 
 ```
 
 ---
 
-## 5. Visualization & Analysis
+## 📊 Visualization & Analysis
 
-### 5.1 RViz2 Setup
+### RViz2 Setup
 
-To visualize the map and drone, open `rviz2` in a new terminal.
+Launch `rviz2` to visualize the drone and the map.
 
-* **Fixed Frame:** Set to `camera_link`.
-* **Add Topic:** `/depth_camera/points` (To see what the drone sees).
-* **Add Topic:** `/rtabmap/mapData` (To see the 3D map being built).
+* **Fixed Frame:** Set to `camera_link`
+* **Add Topic:** `/depth_camera/points` (Live 3D view)
+* **Add Topic:** `/rtabmap/mapData` (Global Map)
 
-### 5.2 Analyzing Motor Commands
+### Debugging Topics
 
-To debug actuator outputs (motors U2, U3, U4), use this bridge command:
-
-```bash
-ros2 run ros_gz_bridge parameter_bridge /x500_depth_0/command/motor_speed@actuator_msgs/msg/Actuators[gz.msgs.Actuators
-
-```
-
-### 5.3 Ground Truth Comparison
-
-For Kalman filter validation, compare these topics:
-
-* **Real Position (Gazebo):** `/world/default/model/x500_depth_0/odometry_with_covariance`
-* **IMU Data:** `/world/default/model/x500_depth_0/link/base_link/sensor/imu_sensor/imu`
+* **Motor Commands:** `ros2 run ros_gz_bridge parameter_bridge /x500_depth_0/command/motor_speed@actuator_msgs/msg/Actuators[gz.msgs.Actuators`
+* **Ground Truth Odom:** `/world/default/model/x500_depth_0/odometry_with_covariance`
