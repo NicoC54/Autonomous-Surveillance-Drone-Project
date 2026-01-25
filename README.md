@@ -1,16 +1,16 @@
 # 🚁 Autonomous Surveillance Drone - Simulation Workspace
 
 This work was made by 3 persons:
--Nicolas Consalvi (Hardware setup / Simulation building & setup / SLAM 3D)
--Adrien Waeles-Devaux (Design of an EKF)
--Youssef Miri (AI : Computer vision YOLOv11 / Vocal Commands with LLM / reinforcement learning with MuJoCo)
+- Nicolas Consalvi (Hardware setup / Simulation building & setup / SLAM 3D)
+- Adrien Waeles-Devaux (Design of an EKF)
+- Youssef Miri (AI : Computer vision YOLOv11 / Vocal Commands with LLM / reinforcement learning with MuJoCo)
 
 This repository contains: 
--The complete **ROS 2 workspace** for the Autonomous Surveillance Drone project. It integrates **PX4 Autopilot (SITL)** with **Gazebo Garden/Harmonic**, a custom **TF tree**, and **RTAB-Map** for 3D SLAM.
--The **reinforcement_learning.zip**, which contains our reinforcement learning project : landing on a moving platform thanks to PPO algorithm.
--The Computer_vision (**computer_vision.zip**) & vocal commands (**final_alexa_agent.py**) codes.
+- The complete **ROS 2 workspace** for the Autonomous Surveillance Drone project. It integrates **PX4 Autopilot (SITL)** with **Gazebo Garden/Harmonic**, a custom **TF tree**, and **RTAB-Map** for 3D SLAM.
+- The **reinforcement_learning.zip**, which contains our reinforcement learning project : landing on a moving platform thanks to PPO algorithm.
+- The Computer_vision (**computer_vision.zip**) & vocal commands (**final_alexa_agent.py**) codes.
 
-> **Note for the simulation:** All source codes/packages for TF management (`my_tf2_package`) and SLAM configuration (`rtabmap_slam_pkg`) are already included in this repository in the /src directory. You simply need to copy the repository into a ros2 workspace, build and launch them.
+**Note for the simulation:** All source codes/packages for TF management (`my_tf2_package`) and SLAM configuration (`rtabmap_slam_pkg`) are already included in this repository in the /src directory. You simply need to copy the repository into a ros2 workspace, build and launch them.
 
 **#SETUP OF THE SIMULATION**
 
