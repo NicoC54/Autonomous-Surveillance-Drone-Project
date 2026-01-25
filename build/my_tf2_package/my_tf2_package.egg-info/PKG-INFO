@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: my-tf2-package
+Version: 0.0.0
+Summary: Publie les TF dynamiques du drone (map <-> base_link <-> camera_link)
+Home-page: UNKNOWN
+Maintainer: nicolas
+Maintainer-email: nicolas.consalvipro@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+

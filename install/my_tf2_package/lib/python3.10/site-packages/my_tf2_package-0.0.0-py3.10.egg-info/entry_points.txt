@@ -1,0 +1,3 @@
+[console_scripts]
+drone_tf_node = my_tf2_package.drone_tf_publisher:main
+

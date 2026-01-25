@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/torque_calculator/torque_calculator.egg-info/PKG-INFO
+../../build/torque_calculator/torque_calculator.egg-info/SOURCES.txt
+../../build/torque_calculator/torque_calculator.egg-info/dependency_links.txt
+../../build/torque_calculator/torque_calculator.egg-info/entry_points.txt
+../../build/torque_calculator/torque_calculator.egg-info/requires.txt
+../../build/torque_calculator/torque_calculator.egg-info/top_level.txt
+../../build/torque_calculator/torque_calculator.egg-info/zip-safe
+resource/torque_calculator
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+torque_calculator/__init__.py
+torque_calculator/torque_calculator_node.py

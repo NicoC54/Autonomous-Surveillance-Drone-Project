@@ -1,0 +1,16 @@
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/launch/rtabmap_slam.launch.py
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/ament_index/resource_index/package_run_dependencies/rtabmap_slam_pkg
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/ament_index/resource_index/parent_prefix_path/rtabmap_slam_pkg
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/ament_prefix_path.sh
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/ament_prefix_path.dsv
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/path.sh
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/path.dsv
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.bash
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.sh
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.zsh
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.dsv
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.dsv
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/ament_index/resource_index/packages/rtabmap_slam_pkg
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/cmake/rtabmap_slam_pkgConfig.cmake
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/cmake/rtabmap_slam_pkgConfig-version.cmake
+/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.xml

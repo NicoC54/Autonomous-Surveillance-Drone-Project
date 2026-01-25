@@ -1,0 +1,383 @@
+[0.362s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.362s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a7db10632b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a7db1062c20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a7db1062c20>>, mixin_verb=('build',))
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.663s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nicolas/ws_ros2'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.683s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extensions ['ignore', 'ignore_ament_install']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extension 'ignore'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extension 'ignore_ament_install'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extensions ['colcon_pkg']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extension 'colcon_pkg'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extensions ['colcon_meta']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extension 'colcon_meta'
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extensions ['ros']
+[0.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_tf2_package) by extension 'ros'
+[0.691s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_tf2_package' with type 'ros.ament_python' and name 'my_tf2_package'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.695s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.698s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extension 'ignore'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extension 'ignore_ament_install'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extensions ['colcon_pkg']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extension 'colcon_pkg'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extensions ['colcon_meta']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extension 'colcon_meta'
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extensions ['ros']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src/rtabmap_slam_pkg) by extension 'ros'
+[0.701s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rtabmap_slam_pkg' with type 'ros.ament_cmake' and name 'rtabmap_slam_pkg'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extensions ['ignore', 'ignore_ament_install']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extension 'ignore'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extension 'ignore_ament_install'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extensions ['colcon_pkg']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extension 'colcon_pkg'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extensions ['colcon_meta']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extension 'colcon_meta'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extensions ['ros']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src/torque_calculator) by extension 'ros'
+[0.703s] DEBUG:colcon.colcon_core.package_identification:Package 'src/torque_calculator' with type 'ros.ament_python' and name 'torque_calculator'
+[0.703s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.703s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.703s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.703s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.704s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.763s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.763s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.769s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/nicolas/ws_ros2/install
+[0.772s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 362 installed packages in /opt/ros/humble
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'cmake_target' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'my_tf2_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.879s] DEBUG:colcon.colcon_core.verb:Building package 'my_tf2_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nicolas/ws_ros2/build/my_tf2_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nicolas/ws_ros2/install/my_tf2_package', 'merge_install': False, 'path': '/home/nicolas/ws_ros2/src/my_tf2_package', 'symlink_install': False, 'test_result_base': None}
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.879s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.879s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nicolas/ws_ros2/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nicolas/ws_ros2/install/px4_msgs', 'merge_install': False, 'path': '/home/nicolas/ws_ros2/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'cmake_target' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'rtabmap_slam_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.880s] DEBUG:colcon.colcon_core.verb:Building package 'rtabmap_slam_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg', 'merge_install': False, 'path': '/home/nicolas/ws_ros2/src/rtabmap_slam_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'cmake_args' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'cmake_target' from command line to 'None'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'cmake_clean_first' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'cmake_force_configure' from command line to 'False'
+[0.880s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'ament_cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'torque_calculator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.881s] DEBUG:colcon.colcon_core.verb:Building package 'torque_calculator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nicolas/ws_ros2/build/torque_calculator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nicolas/ws_ros2/install/torque_calculator', 'merge_install': False, 'path': '/home/nicolas/ws_ros2/src/torque_calculator', 'symlink_install': False, 'test_result_base': None}
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.881s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.881s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nicolas/ws_ros2/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nicolas/ws_ros2/install/px4_ros_com', 'merge_install': False, 'path': '/home/nicolas/ws_ros2/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.881s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.883s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.883s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nicolas/ws_ros2/src/px4_msgs' with build type 'ament_cmake'
+[0.883s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nicolas/ws_ros2/src/px4_msgs'
+[0.888s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.888s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.888s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.894s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nicolas/ws_ros2/src/my_tf2_package' with build type 'ament_python'
+[0.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_tf2_package', 'ament_prefix_path')
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/hook/ament_prefix_path.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/hook/ament_prefix_path.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/hook/ament_prefix_path.sh'
+[0.898s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.899s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.903s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nicolas/ws_ros2/src/rtabmap_slam_pkg' with build type 'ament_cmake'
+[0.903s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nicolas/ws_ros2/src/rtabmap_slam_pkg'
+[0.904s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.904s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.908s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nicolas/ws_ros2/src/torque_calculator' with build type 'ament_python'
+[0.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('torque_calculator', 'ament_prefix_path')
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/hook/ament_prefix_path.ps1'
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/hook/ament_prefix_path.dsv'
+[0.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/hook/ament_prefix_path.sh'
+[0.911s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.912s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/px4_msgs -- -j16 -l16
+[1.256s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nicolas/ws_ros2/src/my_tf2_package'
+[1.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/rtabmap_slam_pkg -- -j16 -l16
+[1.658s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nicolas/ws_ros2/src/torque_calculator'
+[1.659s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.659s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/rtabmap_slam_pkg -- -j16 -l16
+[1.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/rtabmap_slam_pkg
+[1.704s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rtabmap_slam_pkg)
+[1.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/rtabmap_slam_pkg
+[1.711s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg' for CMake module files
+[1.711s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg' for CMake config files
+[1.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('rtabmap_slam_pkg', 'cmake_prefix_path')
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/hook/cmake_prefix_path.ps1'
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/hook/cmake_prefix_path.dsv'
+[1.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/hook/cmake_prefix_path.sh'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/bin'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/lib/pkgconfig/rtabmap_slam_pkg.pc'
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/lib/python3.10/site-packages'
+[1.716s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/bin'
+[1.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.ps1'
+[1.718s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.dsv'
+[1.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.sh'
+[1.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.bash'
+[1.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.zsh'
+[1.723s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/colcon-core/packages/rtabmap_slam_pkg)
+[1.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rtabmap_slam_pkg)
+[1.725s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg' for CMake module files
+[1.726s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg' for CMake config files
+[1.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('rtabmap_slam_pkg', 'cmake_prefix_path')
+[1.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/hook/cmake_prefix_path.ps1'
+[1.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/hook/cmake_prefix_path.dsv'
+[1.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/hook/cmake_prefix_path.sh'
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/bin'
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/lib/pkgconfig/rtabmap_slam_pkg.pc'
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/lib/python3.10/site-packages'
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/bin'
+[1.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.ps1'
+[1.729s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.dsv'
+[1.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.sh'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.bash'
+[1.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.zsh'
+[1.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/colcon-core/packages/rtabmap_slam_pkg)
+[2.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/src/my_tf2_package': PYTHONPATH=/home/nicolas/ws_ros2/build/my_tf2_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_tf2_package build --build-base /home/nicolas/ws_ros2/build/my_tf2_package/build install --record /home/nicolas/ws_ros2/build/my_tf2_package/install.log --single-version-externally-managed install_data
+[2.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/src/torque_calculator': PYTHONPATH=/home/nicolas/ws_ros2/build/torque_calculator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/torque_calculator build --build-base /home/nicolas/ws_ros2/build/torque_calculator/build install --record /home/nicolas/ws_ros2/build/torque_calculator/install.log --single-version-externally-managed install_data
+[2.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/px4_msgs -- -j16 -l16
+[2.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/px4_msgs
+[2.653s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/my_tf2_package' for CMake module files
+[2.658s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/my_tf2_package' for CMake config files
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/my_tf2_package/lib'
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/my_tf2_package/bin'
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/my_tf2_package/lib/pkgconfig/my_tf2_package.pc'
+[2.671s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages'
+[2.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_tf2_package', 'pythonpath')
+[2.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/hook/pythonpath.ps1'
+[2.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/hook/pythonpath.dsv'
+[2.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/hook/pythonpath.sh'
+[2.679s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/my_tf2_package/bin'
+[2.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_tf2_package)
+[2.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/package.ps1'
+[2.683s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/package.dsv'
+[2.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/package.sh'
+[2.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/package.bash'
+[2.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/my_tf2_package/share/my_tf2_package/package.zsh'
+[2.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/my_tf2_package/share/colcon-core/packages/my_tf2_package)
+[2.691s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/torque_calculator' for CMake module files
+[2.692s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/torque_calculator' for CMake config files
+[2.699s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/torque_calculator/lib'
+[2.699s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/torque_calculator/bin'
+[2.699s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/torque_calculator/lib/pkgconfig/torque_calculator.pc'
+[2.700s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages'
+[2.700s] Level 1:colcon.colcon_core.shell:create_environment_hook('torque_calculator', 'pythonpath')
+[2.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/hook/pythonpath.ps1'
+[2.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/hook/pythonpath.dsv'
+[2.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/hook/pythonpath.sh'
+[2.707s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/torque_calculator/bin'
+[2.708s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(torque_calculator)
+[2.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/package.ps1'
+[2.712s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/package.dsv'
+[2.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/package.sh'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/package.bash'
+[2.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator/package.zsh'
+[2.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/torque_calculator/share/colcon-core/packages/torque_calculator)
+[2.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/src/my_tf2_package' returned '0': PYTHONPATH=/home/nicolas/ws_ros2/build/my_tf2_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_tf2_package build --build-base /home/nicolas/ws_ros2/build/my_tf2_package/build install --record /home/nicolas/ws_ros2/build/my_tf2_package/install.log --single-version-externally-managed install_data
+[2.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/src/torque_calculator' returned '0': PYTHONPATH=/home/nicolas/ws_ros2/build/torque_calculator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/torque_calculator build --build-base /home/nicolas/ws_ros2/build/torque_calculator/build install --record /home/nicolas/ws_ros2/build/torque_calculator/install.log --single-version-externally-managed install_data
+[3.049s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[3.050s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs' for CMake module files
+[3.050s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/px4_msgs
+[3.051s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs' for CMake config files
+[3.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[3.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[3.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[3.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[3.059s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/lib'
+[3.059s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[3.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[3.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[3.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[3.060s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/bin'
+[3.061s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[3.061s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/lib/python3.10/site-packages'
+[3.061s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/bin'
+[3.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.ps1'
+[3.062s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.dsv'
+[3.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.sh'
+[3.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.bash'
+[3.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.zsh'
+[3.064s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[3.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[3.065s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs' for CMake module files
+[3.066s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs' for CMake config files
+[3.070s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[3.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[3.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[3.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[3.073s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/lib'
+[3.073s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[3.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[3.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[3.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[3.075s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/bin'
+[3.075s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[3.075s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/lib/python3.10/site-packages'
+[3.076s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_msgs/bin'
+[3.076s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.ps1'
+[3.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.dsv'
+[3.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.sh'
+[3.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.bash'
+[3.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_msgs/share/px4_msgs/package.zsh'
+[3.078s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[3.079s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nicolas/ws_ros2/src/px4_ros_com' with build type 'ament_cmake'
+[3.079s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nicolas/ws_ros2/src/px4_ros_com'
+[3.079s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.079s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.097s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/nicolas/ws_ros2/install/px4_msgs:/home/nicolas/ws_ros2/install/rtabmap_slam_pkg:/home/nicolas/ws_ros2/install/px4_ros_com:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble LD_LIBRARY_PATH=/home/nicolas/ws_ros2/install/px4_msgs/lib:/home/nicolas/ws_ros2/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nicolas/ws_ros2/build/px4_ros_com -- -j16 -l16
+[3.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/nicolas/ws_ros2/install/px4_msgs:/home/nicolas/ws_ros2/install/rtabmap_slam_pkg:/home/nicolas/ws_ros2/install/px4_ros_com:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble LD_LIBRARY_PATH=/home/nicolas/ws_ros2/install/px4_msgs/lib:/home/nicolas/ws_ros2/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nicolas/ws_ros2/build/px4_ros_com -- -j16 -l16
+[3.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nicolas/ws_ros2/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/nicolas/ws_ros2/install/px4_msgs:/home/nicolas/ws_ros2/install/rtabmap_slam_pkg:/home/nicolas/ws_ros2/install/px4_ros_com:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble LD_LIBRARY_PATH=/home/nicolas/ws_ros2/install/px4_msgs/lib:/home/nicolas/ws_ros2/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nicolas/ws_ros2/build/px4_ros_com
+[3.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[3.686s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com' for CMake module files
+[3.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nicolas/ws_ros2/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/nicolas/ws_ros2/install/px4_msgs:/home/nicolas/ws_ros2/install/rtabmap_slam_pkg:/home/nicolas/ws_ros2/install/px4_ros_com:/home/nicolas/ws_ros2/install/torque_calculator:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble LD_LIBRARY_PATH=/home/nicolas/ws_ros2/install/px4_msgs/lib:/home/nicolas/ws_ros2/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nicolas/ws_ros2/build/px4_ros_com
+[3.688s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com' for CMake config files
+[3.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[3.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[3.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[3.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[3.693s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/lib'
+[3.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[3.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[3.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[3.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/bin'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[3.695s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/lib/python3.10/site-packages'
+[3.696s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/bin'
+[3.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[3.697s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[3.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.sh'
+[3.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.bash'
+[3.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[3.698s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[3.698s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[3.699s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com' for CMake module files
+[3.699s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com' for CMake config files
+[3.700s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[3.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[3.700s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[3.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[3.701s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/lib'
+[3.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[3.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[3.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/bin'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/lib/python3.10/site-packages'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/nicolas/ws_ros2/install/px4_ros_com/bin'
+[3.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[3.706s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[3.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.sh'
+[3.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.bash'
+[3.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/nicolas/ws_ros2/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[3.707s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nicolas/ws_ros2/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[3.708s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.708s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.708s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.708s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.720s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.720s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.720s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.739s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.739s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nicolas/ws_ros2/install/local_setup.ps1'
+[3.741s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nicolas/ws_ros2/install/_local_setup_util_ps1.py'
+[3.743s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nicolas/ws_ros2/install/setup.ps1'
+[3.745s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nicolas/ws_ros2/install/local_setup.sh'
+[3.747s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nicolas/ws_ros2/install/_local_setup_util_sh.py'
+[3.747s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nicolas/ws_ros2/install/setup.sh'
+[3.749s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nicolas/ws_ros2/install/local_setup.bash'
+[3.751s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nicolas/ws_ros2/install/setup.bash'
+[3.753s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nicolas/ws_ros2/install/local_setup.zsh'
+[3.753s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nicolas/ws_ros2/install/setup.zsh'

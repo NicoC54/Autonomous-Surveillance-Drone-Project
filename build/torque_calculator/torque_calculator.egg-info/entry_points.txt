@@ -1,0 +1,3 @@
+[console_scripts]
+torque_node = torque_calculator.torque_calculator_node:main
+

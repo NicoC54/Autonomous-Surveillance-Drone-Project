@@ -1,0 +1,21 @@
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+Call Stack (most recent call first):
+  /opt/ros/humble/lib/x86_64-linux-gnu/rtabmap-0.22/RTABMapConfig.cmake:7 (find_dependency)
+  /opt/ros/humble/share/rtabmap_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/rtabmap_conversions/cmake/rtabmap_conversionsConfig.cmake:41 (include)
+  /opt/ros/humble/share/rtabmap_util/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/rtabmap_util/cmake/rtabmap_utilConfig.cmake:41 (include)
+  /opt/ros/humble/share/rtabmap_slam/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/rtabmap_slam/cmake/rtabmap_slamConfig.cmake:41 (include)
+  CMakeLists.txt:16 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m

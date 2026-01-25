@@ -1,0 +1,2 @@
+Invoking command in '/home/nicolas/ws_ros2/build/teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nicolas/ws_ros2/src/ros2_px4_teleop_example/src/teleop -DCMAKE_INSTALL_PREFIX=/home/nicolas/ws_ros2/install/teleop
+Invoked command in '/home/nicolas/ws_ros2/build/teleop' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nicolas/ws_ros2/src/ros2_px4_teleop_example/src/teleop -DCMAKE_INSTALL_PREFIX=/home/nicolas/ws_ros2/install/teleop

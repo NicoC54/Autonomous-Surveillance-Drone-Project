@@ -1,0 +1,37 @@
+[1.093s] Invoking command in '/home/nicolas/ws_ros2/src/torque_calculator': PYTHONPATH=/home/nicolas/ws_ros2/build/torque_calculator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/torque_calculator build --build-base /home/nicolas/ws_ros2/build/torque_calculator/build install --record /home/nicolas/ws_ros2/build/torque_calculator/install.log --single-version-externally-managed install_data
+[1.431s] running egg_info
+[1.432s] creating ../../build/torque_calculator/torque_calculator.egg-info
+[1.432s] writing ../../build/torque_calculator/torque_calculator.egg-info/PKG-INFO
+[1.433s] writing dependency_links to ../../build/torque_calculator/torque_calculator.egg-info/dependency_links.txt
+[1.433s] writing entry points to ../../build/torque_calculator/torque_calculator.egg-info/entry_points.txt
+[1.433s] writing requirements to ../../build/torque_calculator/torque_calculator.egg-info/requires.txt
+[1.433s] writing top-level names to ../../build/torque_calculator/torque_calculator.egg-info/top_level.txt
+[1.433s] writing manifest file '../../build/torque_calculator/torque_calculator.egg-info/SOURCES.txt'
+[1.435s] reading manifest file '../../build/torque_calculator/torque_calculator.egg-info/SOURCES.txt'
+[1.436s] writing manifest file '../../build/torque_calculator/torque_calculator.egg-info/SOURCES.txt'
+[1.436s] running build
+[1.437s] running build_py
+[1.437s] creating /home/nicolas/ws_ros2/build/torque_calculator/build
+[1.437s] creating /home/nicolas/ws_ros2/build/torque_calculator/build/lib
+[1.437s] creating /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator
+[1.437s] copying torque_calculator/torque_calculator_node.py -> /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator
+[1.437s] copying torque_calculator/__init__.py -> /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator
+[1.438s] running install
+[1.438s] running install_lib
+[1.438s] creating /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator
+[1.439s] copying /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator/torque_calculator_node.py -> /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator
+[1.439s] copying /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator/__init__.py -> /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator
+[1.439s] byte-compiling /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator/torque_calculator_node.py to torque_calculator_node.cpython-310.pyc
+[1.440s] byte-compiling /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator/__init__.py to __init__.cpython-310.pyc
+[1.441s] running install_data
+[1.441s] creating /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index
+[1.441s] creating /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index/resource_index
+[1.441s] creating /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index/resource_index/packages
+[1.441s] copying resource/torque_calculator -> /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index/resource_index/packages
+[1.441s] copying package.xml -> /home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator
+[1.442s] running install_egg_info
+[1.443s] Copying ../../build/torque_calculator/torque_calculator.egg-info to /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator-0.0.0-py3.10.egg-info
+[1.444s] running install_scripts
+[1.471s] Installing torque_node script to /home/nicolas/ws_ros2/install/torque_calculator/lib/torque_calculator
+[1.471s] writing list of installed files to '/home/nicolas/ws_ros2/build/torque_calculator/install.log'
+[1.511s] Invoked command in '/home/nicolas/ws_ros2/src/torque_calculator' returned '0': PYTHONPATH=/home/nicolas/ws_ros2/build/torque_calculator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/torque_calculator build --build-base /home/nicolas/ws_ros2/build/torque_calculator/build install --record /home/nicolas/ws_ros2/build/torque_calculator/install.log --single-version-externally-managed install_data

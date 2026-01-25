@@ -1,0 +1,22 @@
+[0.171s] Invoking command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/rtabmap_slam_pkg -- -j16 -l16
+[0.198s] Invoked command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/rtabmap_slam_pkg -- -j16 -l16
+[0.207s] Invoking command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/rtabmap_slam_pkg
+[0.212s] -- Install configuration: ""
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/launch
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/launch/rtabmap_slam.launch.py
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/ament_index/resource_index/package_run_dependencies/rtabmap_slam_pkg
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/ament_index/resource_index/parent_prefix_path/rtabmap_slam_pkg
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/ament_prefix_path.sh
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/ament_prefix_path.dsv
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/path.sh
+[0.212s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/environment/path.dsv
+[0.213s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.bash
+[0.213s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.sh
+[0.213s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.zsh
+[0.213s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/local_setup.dsv
+[0.214s] -- Installing: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.dsv
+[0.214s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/ament_index/resource_index/packages/rtabmap_slam_pkg
+[0.214s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/cmake/rtabmap_slam_pkgConfig.cmake
+[0.214s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/cmake/rtabmap_slam_pkgConfig-version.cmake
+[0.214s] -- Up-to-date: /home/nicolas/ws_ros2/install/rtabmap_slam_pkg/share/rtabmap_slam_pkg/package.xml
+[0.214s] Invoked command in '/home/nicolas/ws_ros2/build/rtabmap_slam_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/rtabmap_slam_pkg

@@ -1,0 +1,6 @@
+source;share/torque_calculator/hook/pythonpath.ps1
+source;share/torque_calculator/hook/pythonpath.dsv
+source;share/torque_calculator/hook/pythonpath.sh
+source;share/torque_calculator/hook/ament_prefix_path.ps1
+source;share/torque_calculator/hook/ament_prefix_path.dsv
+source;share/torque_calculator/hook/ament_prefix_path.sh

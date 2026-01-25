@@ -1,0 +1,14 @@
+/rtabmap:
+  ros__parameters:
+    use_sim_time: true
+    subscribe_depth: false
+    subscribe_rgb: true
+    rgb_topic: "/world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/image"
+    camera_info_topic: "/world/default/model/x500_depth_0/link/camera_link/sensor/IMX214/camera_info"
+    subscribe_scan_cloud: true
+    scan_cloud_topic: "/depth_camera/points"
+    approx_sync: true
+    topic_queue_size: 50
+    sync_queue_size: 50
+    qos_image: 1
+    qos_camera_info: 1

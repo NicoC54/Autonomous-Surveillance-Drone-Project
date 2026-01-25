@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/torque_calculator/torque_calculator.egg-info
+writing ../../build/torque_calculator/torque_calculator.egg-info/PKG-INFO
+writing dependency_links to ../../build/torque_calculator/torque_calculator.egg-info/dependency_links.txt
+writing entry points to ../../build/torque_calculator/torque_calculator.egg-info/entry_points.txt
+writing requirements to ../../build/torque_calculator/torque_calculator.egg-info/requires.txt
+writing top-level names to ../../build/torque_calculator/torque_calculator.egg-info/top_level.txt
+writing manifest file '../../build/torque_calculator/torque_calculator.egg-info/SOURCES.txt'
+reading manifest file '../../build/torque_calculator/torque_calculator.egg-info/SOURCES.txt'
+writing manifest file '../../build/torque_calculator/torque_calculator.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nicolas/ws_ros2/build/torque_calculator/build
+creating /home/nicolas/ws_ros2/build/torque_calculator/build/lib
+creating /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator
+copying torque_calculator/torque_calculator_node.py -> /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator
+copying torque_calculator/__init__.py -> /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator
+running install
+running install_lib
+creating /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator
+copying /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator/torque_calculator_node.py -> /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator
+copying /home/nicolas/ws_ros2/build/torque_calculator/build/lib/torque_calculator/__init__.py -> /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator
+byte-compiling /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator/torque_calculator_node.py to torque_calculator_node.cpython-310.pyc
+byte-compiling /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index
+creating /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index/resource_index
+creating /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index/resource_index/packages
+copying resource/torque_calculator -> /home/nicolas/ws_ros2/install/torque_calculator/share/ament_index/resource_index/packages
+copying package.xml -> /home/nicolas/ws_ros2/install/torque_calculator/share/torque_calculator
+running install_egg_info
+Copying ../../build/torque_calculator/torque_calculator.egg-info to /home/nicolas/ws_ros2/install/torque_calculator/lib/python3.10/site-packages/torque_calculator-0.0.0-py3.10.egg-info
+running install_scripts
+Installing torque_node script to /home/nicolas/ws_ros2/install/torque_calculator/lib/torque_calculator
+writing list of installed files to '/home/nicolas/ws_ros2/build/torque_calculator/install.log'

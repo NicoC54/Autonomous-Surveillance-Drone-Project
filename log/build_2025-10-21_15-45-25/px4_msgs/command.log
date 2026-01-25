@@ -1,0 +1,4 @@
+Invoking command in '/home/nicolas/ws_ros2/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/px4_msgs -- -j16 -l16
+Invoked command in '/home/nicolas/ws_ros2/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --build /home/nicolas/ws_ros2/build/px4_msgs -- -j16 -l16
+Invoking command in '/home/nicolas/ws_ros2/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/px4_msgs
+Invoked command in '/home/nicolas/ws_ros2/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nicolas/ws_ros2/install/my_tf2_package:/opt/ros/humble /usr/bin/cmake --install /home/nicolas/ws_ros2/build/px4_msgs

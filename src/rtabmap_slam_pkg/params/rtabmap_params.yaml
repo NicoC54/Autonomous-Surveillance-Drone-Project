@@ -1,0 +1,35 @@
+# Structure ROS 2 correcte
+/rtabmap:
+  ros__parameters:
+    frame_id: "base_link"
+    use_sim_time: true
+    database_path: "~/.ros/rtabmap.db"
+
+    # --- Souscriptions ---
+    # (Pas besoin de ..._topic:, les remappings du launch.py s'en chargent)
+    subscribe_depth: false
+    subscribe_rgb: true
+    subscribe_scan_cloud: true
+
+    # --- Synchronisation ---
+    approx_sync: true
+    topic_queue_size: 50
+    sync_queue_size: 50
+    qos_image: 1
+    qos_camera_info: 1
+
+    # --- Repères (Frames) ---
+    map_frame_id: "map"
+    # Ceci DOIT correspondre au t.header.frame_id de votre script python
+    odom_frame_id: "x500_depth_0/odom" 
+
+    # --- STRATÉGIE D'ODOMÉTRIE ---
+    # 1 = Utiliser le TF tree (publié par votre script drone_tf_pub.py)
+    Odom/Strategy: 1
+
+    # --- Autres paramètres ---
+    ground_truth_frame_id: ""
+    RGBD/NeighborLinkRefining: "true"
+    RGBD/ProximityBySpace: "true"
+    Optimizer/GravitySigma: 0.3
+    Optimizer/Slam2D: false

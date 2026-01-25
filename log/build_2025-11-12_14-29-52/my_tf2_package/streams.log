@@ -1,0 +1,24 @@
+[1.091s] Invoking command in '/home/nicolas/ws_ros2/src/my_tf2_package': PYTHONPATH=/home/nicolas/ws_ros2/build/my_tf2_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_tf2_package build --build-base /home/nicolas/ws_ros2/build/my_tf2_package/build install --record /home/nicolas/ws_ros2/build/my_tf2_package/install.log --single-version-externally-managed install_data
+[1.246s] running egg_info
+[1.247s] writing ../../build/my_tf2_package/my_tf2_package.egg-info/PKG-INFO
+[1.247s] writing dependency_links to ../../build/my_tf2_package/my_tf2_package.egg-info/dependency_links.txt
+[1.247s] writing entry points to ../../build/my_tf2_package/my_tf2_package.egg-info/entry_points.txt
+[1.247s] writing requirements to ../../build/my_tf2_package/my_tf2_package.egg-info/requires.txt
+[1.247s] writing top-level names to ../../build/my_tf2_package/my_tf2_package.egg-info/top_level.txt
+[1.247s] reading manifest file '../../build/my_tf2_package/my_tf2_package.egg-info/SOURCES.txt'
+[1.248s] writing manifest file '../../build/my_tf2_package/my_tf2_package.egg-info/SOURCES.txt'
+[1.248s] running build
+[1.248s] running build_py
+[1.248s] copying my_tf2_package/drone_tf_publisher.py -> /home/nicolas/ws_ros2/build/my_tf2_package/build/lib/my_tf2_package
+[1.248s] running install
+[1.248s] running install_lib
+[1.248s] copying /home/nicolas/ws_ros2/build/my_tf2_package/build/lib/my_tf2_package/drone_tf_publisher.py -> /home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages/my_tf2_package
+[1.249s] byte-compiling /home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages/my_tf2_package/drone_tf_publisher.py to drone_tf_publisher.cpython-310.pyc
+[1.250s] running install_data
+[1.250s] running install_egg_info
+[1.252s] removing '/home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages/my_tf2_package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.252s] Copying ../../build/my_tf2_package/my_tf2_package.egg-info to /home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages/my_tf2_package-0.0.0-py3.10.egg-info
+[1.252s] running install_scripts
+[1.271s] Installing drone_tf_node script to /home/nicolas/ws_ros2/install/my_tf2_package/lib/my_tf2_package
+[1.271s] writing list of installed files to '/home/nicolas/ws_ros2/build/my_tf2_package/install.log'
+[1.296s] Invoked command in '/home/nicolas/ws_ros2/src/my_tf2_package' returned '0': PYTHONPATH=/home/nicolas/ws_ros2/build/my_tf2_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_tf2_package build --build-base /home/nicolas/ws_ros2/build/my_tf2_package/build install --record /home/nicolas/ws_ros2/build/my_tf2_package/install.log --single-version-externally-managed install_data

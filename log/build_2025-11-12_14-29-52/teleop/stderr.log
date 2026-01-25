@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:11 (find_package):
+  By not providing "Findpx4_ros2_cpp.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "px4_ros2_cpp", but CMake did not find one.
+
+  Could not find a package configuration file provided by "px4_ros2_cpp" with
+  any of the following names:
+
+    px4_ros2_cppConfig.cmake
+    px4_ros2_cpp-config.cmake
+
+  Add the installation prefix of "px4_ros2_cpp" to CMAKE_PREFIX_PATH or set
+  "px4_ros2_cpp_DIR" to a directory containing one of the above files.  If
+  "px4_ros2_cpp" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m

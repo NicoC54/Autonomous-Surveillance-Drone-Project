@@ -1,0 +1,3 @@
+[console_scripts]
+teleop_twist_rpyt_keyboard = teleop_twist_rpyt_keyboard:main
+

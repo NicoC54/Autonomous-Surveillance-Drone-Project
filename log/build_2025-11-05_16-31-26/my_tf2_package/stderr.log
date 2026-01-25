@@ -1,0 +1,5 @@
+  File "/home/nicolas/ws_ros2/install/my_tf2_package/lib/python3.10/site-packages/my_tf2_package/drone_tf_publisher.py", line 94
+    self.tf_broadcaster.sendTransform(t_
+                                     ^
+SyntaxError: '(' was never closed
+
