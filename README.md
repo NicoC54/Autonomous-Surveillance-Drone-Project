@@ -2,7 +2,9 @@
 
 This repository contains the complete **ROS 2 workspace** for the Autonomous Surveillance Drone project. It integrates **PX4 Autopilot (SITL)** with **Gazebo Garden/Harmonic**, a custom **TF tree**, and **RTAB-Map** for 3D SLAM.
 
-> **Note:** All source codes for TF management (`my_tf2_package`) and SLAM configuration (`rtabmap_slam_pkg`) are already included in this repository. You simply need to copy the repository into a ros2 workspace, build and launch them.
+The reinforcement_learning.zip contains our reinforcement learning project : landing on a moving platform thanks to PPO algorithm.
+
+> **Note:** All source codes/packages for TF management (`my_tf2_package`) and SLAM configuration (`rtabmap_slam_pkg`) are already included in this repository in the /src directory. You simply need to copy the repository into a ros2 workspace, build and launch them.
 
 ## 📋 Prerequisites & Base Setup
 
