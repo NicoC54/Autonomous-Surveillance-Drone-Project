@@ -1,16 +1,3 @@
-C'est noté. Voici la version finale, propre et optimisée pour ton `README.md`.
-
-J'ai appliqué tes consignes à la lettre :
-
-1. **Suppression des codes sources** (puisqu'ils sont déjà dans ton repo).
-2. **Ajout du lien vers le tuto d'installation** PX4/ROS2.
-3. **Clarification** que ce dépôt contient le workspace complet prêt à l'emploi.
-4. **Suppression de l'installation de ROS Humble** (supposée acquise).
-
-Tu peux copier-coller ce bloc directement.
-
----
-
 # 🚁 Autonomous Surveillance Drone - Simulation Workspace
 
 This repository contains the complete **ROS 2 workspace** for the Autonomous Surveillance Drone project. It integrates **PX4 Autopilot (SITL)** with **Gazebo Garden/Harmonic**, a custom **TF tree**, and **RTAB-Map** for 3D SLAM.
