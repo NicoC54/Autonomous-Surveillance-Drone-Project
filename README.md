@@ -92,7 +92,7 @@ ros2 run ros_gz_bridge parameter_bridge \
 
 ## 📡 Running ROS 2 Nodes (TFs & SLAM)
 
-Once the simulation is running, open new terminals to launch the onboard logic included in this repo.
+Once the simulation is running properly, open new terminals to launch the onboard logic included in this repo (you can copy the packages of this repo into your ros2 workspace and build them).
 
 ### 1. Launch TFs (Coordinate Frames)
 
