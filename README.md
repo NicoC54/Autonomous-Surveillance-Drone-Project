@@ -1,6 +1,6 @@
 <p align="center">
   <img src="Image1.png" width="48%">
-  <img src="Image2.png" width="48%">
+  <img src="Image2.png" width="40%">
 </p>
 
 <p align="center">
