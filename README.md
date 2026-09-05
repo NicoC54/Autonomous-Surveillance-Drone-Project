@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="Image1.png" alt="Drone Simulation View 1" width="48%">
+  <img src="Image2.png" alt="Drone Simulation View 2" width="40%">
+</p>
+
 # 🚁 Autonomous Surveillance Drone - Simulation Workspace
 
 This work was made by 3 persons:
