@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="image1.png" alt="Drone Simulation View 1" width="48%">
-  <img src="image2.png" alt="Drone Simulation View 2" width="48%">
+  <img src="Image1.png" width="48%">
+  <img src="Image2.png" width="48%">
 </p>
 
 <p align="center">
-  <img src="Image3.png" alt="Drone Simulation View 3" width="60%">
+  <img src="Image3.png" width="65%">
 </p>
 
 <p align="center">
-  <img src="Image4.png" alt="Drone Simulation View 4" width="60%">
+  <img src="Image4.png" width="65%">
 </p>
 
 # 🚁 Autonomous Surveillance Drone - Simulation Workspace
