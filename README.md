@@ -7,6 +7,14 @@
 <br>
 
 <p align="center">
+  <img src="flying_first_time.gif" alt="First real flight of the drone after PID calibration" width="80%">
+</p>
+
+> **Engineering Note:** First real-world flight of the drone after PID calibration on a test bench, performed under significant wind conditions. For safety and compliance with school regulations, an external tether cable and a wired power supply were used instead of an onboard LiPo battery to mitigate potential risks.
+
+<br>
+
+<p align="center">
   <img src="Image1.png" width="48%">
   <img src="Image2.png" width="40%">
 </p>
